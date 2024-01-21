@@ -14,7 +14,7 @@ const App = () => {
   // const amount = useRef<HTMLInputElement>(null);
   // const category = useRef<HTMLSelectElement>(null);
 
-  const [expenses,setExpenses] = useState<expenses_interface[]>([{desc:'',amount:'0',category:''}])
+  const [expenses,setExpenses] = useState<expenses_interface[]>([])
   const [filter,setFilter] = useState('')
 
   const filtered_expenses = expenses.filter(item => filter?item.category==filter:item)
